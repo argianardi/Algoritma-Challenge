@@ -1,15 +1,14 @@
-console.log(`1. ---------------- Reverse Alphabet ---------------------`);
 const reverseAlphabet = (alphabet) => {
   // deklarasikan variabel number untuk menampung character angka
-  let number = "";
+  let number = '';
   // deklarasikan variabel reverseCharacter untuk karakter yang posisinya dibalik
-  let reverseCharacter = "";
+  let reverseCharacter = '';
 
   // iterasi semua karakter dan periksa jika ada angka maka masukkan angka tersebut ke dalam variable number dan hapus angka tersebut dari alphabet
   for (let i = 0; i < alphabet.length; i++) {
     if (/\d/.test(alphabet[i])) {
       number += alphabet[i];
-      alphabet = alphabet.replace(1, "");
+      alphabet = alphabet.replace(1, '');
     }
   }
 
@@ -21,4 +20,4 @@ const reverseAlphabet = (alphabet) => {
   // return hasil akhir, karakter yang sudah dibalik plus karakter angka
   return reverseCharacter + number;
 };
-console.log(reverseAlphabet("NEGIE1"));
+console.log(reverseAlphabet('NEGIE1'));
